@@ -1,0 +1,10 @@
+Loan data set contains entries of customers requesting for a loan.
+Target variable is Loan_Status.
+Analyze all input features.
+Create a categorical and continuous data quality report highlighting statistical metrics including count, min, max, mean, mode, median, cardinality etc. 
+Identify outliers for continuous features. 
+Apply feature elimination techniques like missing values, constants, duplicates etc. and identify the list of input features which can be eliminated/dropped, and explain why each feature was dropped.
+Last step will be to upload your final dataset (cleaned)  with the list of input and output features after eliminating bad quality features. You can also consider eliminating rows or observations which does not make sense to you. Please add your comments why rows were dropped (if any).
+Please use excel functions to find statistical metrics like mean, median, count, min, max etc.
+Please use Git to check-in the final files. I'm looking for 2 files 1) Final dataset, file naming convention - Loan_'First Name'.csv  (Loan_Noble.csv) 2) Summary with explanations, file naming convention - 'Summary_First Name'.txt (Summary_Noble.tx, feel free to use ppt or xls or pdf if that's easy)
+Please refer to the session recordings and slides first and if you still have questions, please reach out to me.
