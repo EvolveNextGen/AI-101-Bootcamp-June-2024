@@ -1,1 +1,17 @@
+Q1 Create a environment with your first name using cond and install following packages in it pandas, numpy, matplotlib, sklearn, tensorflow  
 
+Q2. Download the data from   https://www.kaggle.com/c/titanic .
+
+Understand the problem statement
+Load the training cv data using pandas
+Find the number of rows and columns in the dataset
+Find the list of columns using pandas
+Find the number of missing values in each columns
+Do a statistical analysis of the columns values.
+Find out the important columns/feature.
+Design or create new relevant column/feature.
+*******************************************************************
+Try the below steps only if you are comfortable. We'll be covering these in the coming sessions --
+
+Complete preprocessing of the data for the training the models
+Build a classifier model  using  sklearn library.
