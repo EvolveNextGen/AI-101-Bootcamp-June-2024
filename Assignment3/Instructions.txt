@@ -1,14 +1,21 @@
 Q1 Create a environment with your first name using cond and install following packages in it pandas, numpy, matplotlib, sklearn, tensorflow  
 
-Q2. Download the data from   https://www.kaggle.com/c/titanic .
+Q2. Refer the problem here   https://www.kaggle.com/c/titanic .
+Titanic dataset is uploaded in this folder.
+Start by doing a Git Pull and complete the following tasks listed below.
+Once completed, create a document with your code and results.
+Name the document as Assignment3_'First Name' and push/check in to the same GIT Assignment 3 folder.
+
+Tasks - 
 
 Understand the problem statement
 Load the training cv data using pandas
 Find the number of rows and columns in the dataset
 Find the list of columns using pandas
 Find the number of missing values in each columns
-Do a statistical analysis of the columns values.
+Do a statistical analysis of the columns values, create a data quality report.
 Find out the important columns/feature.
+List the columns you will drop and explain the reason.
 Design or create new relevant column/feature.
 *******************************************************************
 Try the below steps only if you are comfortable. We'll be covering these in the coming sessions --
