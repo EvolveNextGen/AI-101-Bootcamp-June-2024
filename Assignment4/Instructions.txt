@@ -1,1 +1,11 @@
-test
+Download the 'election_campaign_data.csv' data file.
+Drop the following variables -  cand_id, last_name, first_name, twitterbirth,facebookdate, facebookjan, youtubebirth
+gen_election is the output variable. 1 - Won, 0 - Lost
+You can use R or Python to solve this problem.
+Refer to the R code I shared or the Python code Durgesh shared last week to solve this.
+Build Logistic Regression, Decision Tree and Random Forest Models
+Which model would you select as the best model and why?
+Please share the model evaluation metrics you used to compare models.
+Create a documentt with all details and also include your code.
+Push your documens to this GIT folder.
+Please complete this by EOD thursday.
