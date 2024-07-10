@@ -1,6 +1,6 @@
 Download the 'election_campaign_data.csv' data file.
 Drop the following variables -  cand_id, last_name, first_name, twitterbirth,facebookdate, facebookjan, youtubebirth
-gen_election is the output variable. 1 - Won, 0 - Lost
+gen_election is the output variable. W - Won, L - Lost
 You can use R or Python to solve this problem.
 Refer to the R code I shared or the Python code Durgesh shared last week to solve this.
 Build Logistic Regression, Decision Tree and Random Forest Models
