@@ -8,7 +8,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
-
 # Correct file path by using a raw string or double backslashes
 file_path = r'C:\Assignment 4\R\Classification\election_campaign_data.csv'
 # or
