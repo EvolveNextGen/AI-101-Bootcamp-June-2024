@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <style>
+        #chat-area {
+            margin: 0 auto;
+            width: 80%;
+            height: 500px;
+            overflow: auto;
+            border: 1px solid gray;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        .input {            
+            width: 100%;
+        }
+
+        .submit-area {
+            justify-content: center;
+            display: flex;
+            margin: 20px auto;
+            width: 80%;            
+        }
+
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 96%;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #C4DBFE;
+            border-radius: 4px;
+        }
+
+        .answer {
+            background-color: aquamarine;
+        }
+
+        button {
+            background-color: #004089;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00306d;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-area"></div>
+
+    <div class="submit-area">
+        <textarea name="input" id="input" cols="40" rows="3"></textarea>
+        <button id="btn">Submit</button>
+    </div>
+
+    <script>
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener('click', getResponse);
+
+        async function getResponse() {                  
+            const inputText = document.getElementById("input").value;
+            const parentDiv = document.getElementById("chat-area");
+            
+            if (inputText === '') { return; }
+            
+            const question = document.createElement('div');
+            question.innerHTML = inputText;
+            question.classList.add("box");
+            parentDiv.appendChild(question);
+            document.getElementById("input").value = '';
+
+            try {
+                const res = await fetch('http://localhost:3000/chat', {
+                    method: 'POST',
+                    headers: {
+                        "Content-Type": 'application/json'
+                    },
+                    body: JSON.stringify({
+                        question: inputText
+                    })
+                });
+
+                const data = await res.json();
+
+                if (data.message) {
+                    const answer = document.createElement('div');
+                    answer.innerHTML = data.message;
+                    answer.classList.add("box", "answer");
+                    parentDiv.appendChild(answer);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+
+            // Scroll to the bottom of the chat area
+            parentDiv.scrollTop = parentDiv.scrollHeight;
+        }
+    </script>
+</body>
+</html>
