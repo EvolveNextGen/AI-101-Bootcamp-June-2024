@@ -1,2 +1,0 @@
-Customer Churn model dataset
-Dataset: https://www.kaggle.com/datasets/kukuroo3/churn-model-data-set-competition-form
